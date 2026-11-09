@@ -1,0 +1,7 @@
+/* invaders styles */
+.g-inv{width:360px;height:360px;display:flex;flex-wrap:wrap;background:#14122b;border-radius:12px;overflow:hidden}
+.g-inv div{width:24px;height:24px}
+.invader{background:#c58bff;border-radius:12px}
+.shooter{background:#63e8b6;border-radius:6px 6px 0 0}
+.laser{background:#ff9f5a;border-radius:6px}
+.boom{background:#ff4d6d;border-radius:50%}

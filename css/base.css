@@ -1,0 +1,39 @@
+/* Shared styles: page, hub cards, game panel, buttons, HUD pills.
+   Per-game styles live in css/games/. Colours are CSS variables on :root. */
+:root{--bg:#fffaf0;--ink:#1a1a2e;--txt:#1a1a2e;--sub:#5b5b78;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--mole:url(../assets/images/mole.jpg)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17142b;--txt:#f5f3ff;--sub:#b8b4d6;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#17142b;--txt:#f5f3ff;--sub:#b8b4d6;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;min-height:100vh;font-family:ui-rounded,"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;color:var(--txt);background:radial-gradient(circle at 8% 8%,#ffe7a8aa,transparent 40%),radial-gradient(circle at 92% 12%,#b6e8ffaa,transparent 40%),radial-gradient(circle at 50% 100%,#d9c8ffaa,transparent 45%),var(--bg);background-attachment:fixed}
+.wrap{max-width:980px;margin:0 auto;padding:28px 18px 40px}
+header{text-align:center}
+.tag{display:inline-block;background:#ffd23f;color:var(--ink);border:3px solid var(--ink);border-radius:99px;padding:4px 14px;font-weight:800;font-size:13px;box-shadow:3px 3px 0 var(--ink)}
+h1{font-size:clamp(48px,10vw,84px);margin:16px 0 6px;letter-spacing:-2px;line-height:1}
+.g{background:linear-gradient(90deg,#ff9f5a,#ffd23f 40%,#63e8b6 70%,#66d0ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+header p{color:var(--sub);margin:0 0 30px}
+#cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+#cards .card:last-child:nth-child(odd){grid-column:1/-1}
+.card{font:inherit;text-align:left;color:var(--ink);cursor:pointer;background:var(--c);border:3px solid var(--ink);border-radius:22px;padding:18px 20px;box-shadow:6px 6px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.card:hover{transform:translate(-2px,-2px) rotate(-.6deg);box-shadow:9px 9px 0 var(--ink)}
+.card:active{transform:translate(4px,4px);box-shadow:2px 2px 0 var(--ink)}
+.card .em{font-size:46px;line-height:1.1}
+.card h3{margin:8px 0 2px;font-size:24px}
+.card p{margin:0 0 14px;font-size:14px;opacity:.8}
+.play,.btn{font:inherit;font-weight:800;font-size:13px;background:#fff;color:var(--ink);border:3px solid var(--ink);border-radius:99px;padding:5px 14px;display:inline-block;cursor:pointer}
+.btn:active{transform:translateY(2px)}
+footer{text-align:center;color:var(--sub);font-size:12px;margin-top:34px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.top h2{margin:0;font-size:clamp(20px,5vw,30px);text-align:center}
+.hint{text-align:center;color:var(--sub);font-weight:600;margin-bottom:16px}
+.panel{background:var(--c);border:3px solid var(--ink);border-radius:26px;box-shadow:6px 6px 0 var(--ink);padding:22px 12px;overflow:hidden}
+#stage{position:relative;width:fit-content;margin:0 auto;background:#fff;color:var(--ink);border:3px solid var(--ink);border-radius:20px;padding:18px}
+.bar{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:12px}
+.pill{background:#fff;border:3px solid var(--ink);border-radius:99px;padding:3px 14px;font-weight:800;box-shadow:3px 3px 0 var(--ink)}
+.msg{min-height:1.5em;text-align:center;font-weight:800;margin-top:10px}
+.over{position:absolute;inset:0;border-radius:17px;background:#1a1a2ee6;color:#fff;display:flex;flex-direction:column;gap:14px;align-items:center;justify-content:center;text-align:center;font-size:24px;font-weight:800;padding:16px;z-index:5}
+#pad{display:none;justify-content:center;gap:10px;margin-top:16px}
+@media(pointer:coarse){#pad.on{display:flex}}
+#pad button{font-size:22px;width:56px;height:56px;border-radius:16px;border:3px solid var(--ink);background:#fff;box-shadow:3px 3px 0 var(--ink)}
+@media(max-width:560px){#cards{grid-template-columns:1fr}}

@@ -1,0 +1,7 @@
+/* connect4 styles */
+.g-c4{width:308px;display:flex;flex-wrap:wrap;background:#3d5afe;border-radius:16px}
+.g-c4 div{width:44px;height:44px;background:radial-gradient(circle,#eef1ff 62%,transparent 64%);cursor:pointer}
+.g-c4 div:nth-child(n+43){height:12px;background:#2536b5;cursor:default}
+.g-c4 .player-one{background:radial-gradient(circle,#ff4d6d 62%,transparent 64%)}
+.g-c4 .player-two{background:radial-gradient(circle,#ffd23f 62%,transparent 64%)}
+.dot{display:inline-block;width:14px;height:14px;border-radius:50%;vertical-align:-2px;margin-right:4px;border:2px solid var(--ink)}

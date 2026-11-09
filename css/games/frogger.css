@@ -1,0 +1,10 @@
+/* frogger styles */
+.g-frog{width:306px;height:306px;display:flex;flex-wrap:wrap;background:#d9f7c9;border:3px solid var(--ink)}
+.g-frog div{width:34px;height:34px}
+.ending-block{background:#ff4d6d}
+.starting-block{background:#4d79ff}
+.l1,.l2,.l3{background:#b5651d}
+.l4,.l5{background:#7fd6ff}
+.c1{background:#1a1a2e}
+.c2,.c3{background:#cfd3dc}
+.frog{background:#2ecc71;border-radius:10px}

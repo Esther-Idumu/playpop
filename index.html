@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>Playpop. Mini Games Arcade</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/games/mole.css">
+        <link rel="stylesheet" href="css/games/memory.css">
+        <link rel="stylesheet" href="css/games/breakout.css">
+        <link rel="stylesheet" href="css/games/invaders.css">
+        <link rel="stylesheet" href="css/games/frogger.css">
+        <link rel="stylesheet" href="css/games/connect4.css">
+        <link rel="stylesheet" href="css/games/rps.css">
+    </head>
+    <body>
+    <div class="wrap">
+    <div id="hub">
+    <header><span class="tag">🎮 mini games arcade</span><h1><span class="g">Play</span>pop.</h1></header>
+    <main id="cards"></main>
+    <footer>More games coming soon</footer>
+    </div>
+    <div id="game" hidden>
+    <div class="top"><button class="btn" id="back">← All games</button><h2 id="gt"></h2><button class="btn" id="rs">↻ Restart</button></div>
+    <div class="hint" id="hint"></div>
+    <div class="panel"><div id="stage"></div>
+    <div id="pad"><button data-k="ArrowLeft">◀</button><button data-k="ArrowUp">▲</button><button data-k="ArrowDown">▼</button><button data-k="ArrowRight">▶</button></div></div>
+    </div>
+    </div>
+    <script src="js/images.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/games/mole.js"></script>
+    <script src="js/games/memory.js"></script>
+    <script src="js/games/breakout.js"></script>
+    <script src="js/games/invaders.js"></script>
+    <script src="js/games/frogger.js"></script>
+    <script src="js/games/connect4.js"></script>
+    <script src="js/games/rps.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
