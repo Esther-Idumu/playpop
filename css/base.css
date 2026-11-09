@@ -1,6 +1,6 @@
 /* Shared styles: page, hub cards, game panel, buttons, HUD pills.
    Per-game styles live in css/games/. Colours are CSS variables on :root. */
-:root{--bg:#fffaf0;--ink:#1a1a2e;--txt:#1a1a2e;--sub:#5b5b78;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--mole:url(../assets/images/mole.jpg)}
+:root{--bg:#fffaf0;--ink:#1a1a2e;--txt:#1a1a2e;--sub:#5b5b78;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17142b;--txt:#f5f3ff;--sub:#b8b4d6;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#17142b;--txt:#f5f3ff;--sub:#b8b4d6;color-scheme:dark}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
