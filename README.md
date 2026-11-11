@@ -29,5 +29,4 @@ Edit the `GAMES` array in `js/main.js`.
 3. Link both files in `index.html` (before `js/main.js`).
 4. Add an entry to `GAMES` in `js/main.js`.
 
-## Deploy
-Upload the whole folder to any static host (Netlify drop, Vercel, GitHub Pages, Cloudflare Pages). The entry point is `index.html`.
+
